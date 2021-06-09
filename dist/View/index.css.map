@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://react-components-library-template/./src/components/View/View.module.css"],"names":[],"mappings":"AAAA,yBACE","file":"View/index.css","sourcesContent":[".view {\n  color: red;\n}"],"sourceRoot":""}

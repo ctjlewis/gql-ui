@@ -1,0 +1,20 @@
+enum State {
+  AR
+  AK
+}
+
+type Image {
+  src: String!
+}
+
+type User {
+  # The ID field for User objects is their `username` field, rather than `id`.
+  username: String! @id
+  name: String!
+  profilePicture: Image
+  
+  # We can filter results by fields annotated with @search directive.
+  state: State! @search
+  numFollowers: Int @search
+  numFollowing: Int @search
+}

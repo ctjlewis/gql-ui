@@ -6,12 +6,11 @@ import { FC } from 'react';
 //   TestButton as TestButtonProd
 // } from '../../..'
 
-import TestButtonProd from '../../../dist/TestButton';
-import TestHeadingProd from '../../../dist/TestHeading';
+import TestFieldProd from '../../../dist/Field';
+import TestViewProd from '../../../dist/View';
 
-import TestButtonDev from '../../components/TestButton';
-import TestHeadingDev from '../../components/TestHeading';
-
+import TestFieldDev from '../../components/Field';
+import TestViewDev from '../../components/View';
 
 const Row: FC = ({ children, ...props }) => {
   return (
@@ -43,13 +42,13 @@ const ComponentDemo = () => {
       <div className="w-full grid grid-cols-2 gap-8">
         <div className="grid grid-rows-2 gap-8 justify-items-center">
           <h3>Development</h3>
-          <TestButtonDev />
-          <TestHeadingDev />
+          <TestFieldProd />
+          <TestViewDev />
         </div>
         <div className="grid grid-rows-2 gap-8 justify-items-center">
           <h3>Production</h3>
-          <TestButtonProd />
-          <TestHeadingProd />
+          <TestFieldProd />
+          <TestViewProd />
         </div>
       </div>
     </Centered>

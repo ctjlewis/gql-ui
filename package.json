@@ -10,7 +10,7 @@
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "version": "0.2.0",
+  "version": "0.0.1",
   "description": "A template repository for developing a React component library.",
   "author": "C. Lewis",
   "license": "MIT",
@@ -23,6 +23,8 @@
     "test": "mocha"
   },
   "dependencies": {
+    "dot-object": "^2.1.4",
+    "json-to-graphql-query": "^2.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
